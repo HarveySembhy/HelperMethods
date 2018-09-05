@@ -10,9 +10,9 @@ namespace HelperMethods
     {
         static void Main(string[] args)
         {
-            /*
+            
             Console.WriteLine("The Name Game");
-
+                        
             Console.Write("What's your first name? ");
             string firstName = Console.ReadLine();
 
@@ -22,6 +22,7 @@ namespace HelperMethods
             Console.Write("In what city were you born?");
             string city = Console.ReadLine();
 
+            /*
             char[] firstNameArray = firstName.ToCharArray();
             Array.Reverse(firstNameArray);
 
@@ -55,15 +56,17 @@ namespace HelperMethods
             Console.WriteLine("Results: " + result);
             */
 
-            ReverseString();
+            Console.Write("Results: ");
+            ReverseString(firstName);
+            ReverseString(lastName);
+            ReverseString(city);
 
             Console.ReadLine();           
 
         }
 
-        private static void ReverseString()
-        {
-            string message = "Hello World!";
+        private static void ReverseString(string message)
+        {            
             char[] messageArray = message.ToCharArray();
             Array.Reverse(messageArray);
             foreach (char item in messageArray)
