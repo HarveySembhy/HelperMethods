@@ -53,10 +53,20 @@ namespace HelperMethods
 
             Console.WriteLine("Results: " + result);
 
-            Console.ReadLine();
+            Console.ReadLine();           
 
         }
 
+        private static void ReverseString()
+        {
+
+            char[] firstNameArray = firstName.ToCharArray();
+            Array.Reverse(firstNameArray);
+            foreach (char item in firstNameArray)
+            {
+                result += item;
+            }
+        }
 
     }
 }
